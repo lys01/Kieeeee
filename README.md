@@ -12,8 +12,6 @@ Choicc  :   https://github.com/Choicc/MyActions
 
 dust :  https://github.com/arukas-y/zhe
 
-dust2 :  https://github.com/sensi-ribbed/temple
-
 acy01:  https://github.com/ZCY01/daily_scripts
 
 yyds     https://github.com/yysy/jd_scripts
