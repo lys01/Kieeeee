@@ -14,6 +14,4 @@ dust :  https://github.com/arukas-y/zhe
 
 acy01:  https://github.com/ZCY01/daily_scripts
 
-yyds     https://github.com/yysy/jd_scripts
-
 573462273    :  https://github.com/573462273/jdsign1112
