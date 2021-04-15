@@ -1,16 +1,17 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: dust-m有机牧场（截止7月31日)
+name: dust_n Intel渠道店铺签到
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "24 * * * *"
+        - cron: "2 16 * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: monk_pasture
+        types: monk_inter_shop_sign.js
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -28,7 +29,34 @@ jobs:
               run: |
                   node onlyOneExecute.js
               env:
+                  A: ${{ github.event.client_payload.A || secrets.A }}
+                  B: ${{ github.event.client_payload.B || secrets.B }}
+                  C: ${{ github.event.client_payload.C || secrets.C }}
+                  D: ${{ github.event.client_payload.D || secrets.D }}
+                  E: ${{ github.event.client_payload.E || secrets.E }}
+                  F: ${{ github.event.client_payload.F || secrets.F }}
+                  G: ${{ github.event.client_payload.G || secrets.G }}
+                  H: ${{ github.event.client_payload.H || secrets.H }}
+                  I: ${{ github.event.client_payload.I || secrets.I }}
+                  J: ${{ github.event.client_payload.J || secrets.J }}
+                  K: ${{ github.event.client_payload.K || secrets.K }}
+                  L: ${{ github.event.client_payload.L || secrets.L }}
+                  M: ${{ github.event.client_payload.M || secrets.M }}
+                  N: ${{ github.event.client_payload.N || secrets.N }}
+                  O: ${{ github.event.client_payload.O || secrets.O }}
+                  P: ${{ github.event.client_payload.P || secrets.P }}
+                  Q: ${{ github.event.client_payload.Q || secrets.Q }}
+                  R: ${{ github.event.client_payload.R || secrets.R }}
+                  S: ${{ github.event.client_payload.S || secrets.S }}
+                  T: ${{ github.event.client_payload.T || secrets.T }}
+                  U: ${{ github.event.client_payload.U || secrets.U }}
+                  V: ${{ github.event.client_payload.V || secrets.V }}
+                  W: ${{ github.event.client_payload.W || secrets.W }}
+                  X: ${{ github.event.client_payload.X || secrets.X }}
+                  Y: ${{ github.event.client_payload.Y || secrets.Y }}
+                  Z: ${{ github.event.client_payload.Z || secrets.Z }}
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
+                  JD_COOKIE_URL: ${{ github.event.client_payload.JD_COOKIE_URL || secrets.JD_COOKIE_URL }}
                   JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
                   JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
                   PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
@@ -45,8 +73,6 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  MONEY_TREE_SELL_FRUIT: ${{ github.event.clienz_wish.jst_payload.MONEY_TREE_SELL_FRUIT || secrets.MONEY_TREE_SELL_FRUIT }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/monk_pasture.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/monk_inter_shop_sign.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
-                  PASTURE_EXCHANGE_KEYWORD: ${{ github.event.client_payload.PASTURE_EXCHANGE_KEYWORD || secrets.PASTURE_EXCHANGE_KEYWORD }}

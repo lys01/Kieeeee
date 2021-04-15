@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: dust-m有机牧场（截止7月31日)
+name: dust-Ichen京东超市大转盘
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "24 * * * *"
+        - cron: "24 2 * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: monk_pasture
+        types: z_marketLottery
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -29,6 +29,7 @@ jobs:
                   node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
+                  JD_COOKIE_URL: ${{ github.event.client_payload.JD_COOKIE_URL || secrets.JD_COOKIE_URL }}
                   JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
                   JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
                   PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
@@ -46,7 +47,6 @@ jobs:
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
                   MONEY_TREE_SELL_FRUIT: ${{ github.event.clienz_wish.jst_payload.MONEY_TREE_SELL_FRUIT || secrets.MONEY_TREE_SELL_FRUIT }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/monk_pasture.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/z_marketLottery.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
-                  PASTURE_EXCHANGE_KEYWORD: ${{ github.event.client_payload.PASTURE_EXCHANGE_KEYWORD || secrets.PASTURE_EXCHANGE_KEYWORD }}
