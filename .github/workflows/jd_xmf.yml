@@ -48,8 +48,8 @@ jobs:
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
                   UN_SUBSCRIBES: ${{ github.event.client_payload.UN_SUBSCRIBES || secrets.UN_SUBSCRIBES }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/master/jd_xmf.js
-                  #REPOURL: https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
+                  SYNCURL: https://share.r2ray.com/dust/i-chenzhe/z_xmf.js
+                  #REPOURL: https://raw.githubusercontent.com/seamly888/Alie/master/jd_xmf.js
                   #REPOURL: ${{ github.event.client_payload.SHYLOCKS || secrets.SHYLOCKS }}
                   REPOURL: ${{ github.event.client_payload.REPOURL || secrets.REPOURL }}
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
