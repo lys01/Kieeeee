@@ -6,7 +6,7 @@ name: 整点红包雨
 on:
     workflow_dispatch:
     schedule:
-        - cron: "56 * * * *"
+        - cron: "57 * * * *"
     watch:
         types: [started]
     repository_dispatch:
