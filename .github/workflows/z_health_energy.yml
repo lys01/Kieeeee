@@ -6,7 +6,7 @@ name: dust-ichen健康社区-收能量
 on:
     workflow_dispatch:
     schedule:
-        - cron: "40 * * * *"
+        - cron: "10 * * * *"
     watch:
         types: [started]
     repository_dispatch:
