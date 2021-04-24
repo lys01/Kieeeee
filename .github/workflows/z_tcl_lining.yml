@@ -6,7 +6,7 @@ name: dust_c-TCLxLINING
 on:
     workflow_dispatch:
     schedule:
-        - cron: "20 0 * * *"
+        - cron: "20 0,14 * * *"
     watch:
         types: [started]
     repository_dispatch:
