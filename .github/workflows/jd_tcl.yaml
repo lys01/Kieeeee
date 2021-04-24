@@ -6,7 +6,7 @@ name: jd_tcl球队赢好礼(截至5月3号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "45 22 * * *"
+        - cron: "52 15,0 * * *"
     watch:
         types: [started]
     repository_dispatch:
