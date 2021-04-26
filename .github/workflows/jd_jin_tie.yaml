@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 城城分现金(至2021年3月24日)
+name: 领金贴
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "58 15 * * *"
+        - cron: "36 * * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: z_city_cash
+        types: jd_jin_tie
 
 jobs:
     build:
@@ -72,6 +72,6 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/z_city_cash.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/jd_jin_tie.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
