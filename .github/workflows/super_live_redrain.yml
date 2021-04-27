@@ -7,7 +7,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_live_redrain.js
+        types: super_live_redrain.js
 
 jobs:
     build:
