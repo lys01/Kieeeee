@@ -6,7 +6,7 @@ name: jddj_京东到家果园任务
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 2,15,16 * * *"
+        - cron: "10 0,3,9 * * *"
     watch:
         types: [started]
     repository_dispatch:
