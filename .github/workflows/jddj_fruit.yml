@@ -40,7 +40,7 @@ jobs:
           cd ~/JDDJ
           node jddj_fruit.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          JDDJ_COOKIES: ${{ secrets.JDDJ_COOKIES }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           QYWX_AM: ${{ secrets.QYWX_AM }}
