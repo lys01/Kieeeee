@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_live
+    types: Me_super_live_redrain
 jobs:
   build:
 
@@ -45,8 +45,8 @@ jobs:
               python3 accwait.py 0.1 0.1 59
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_super_redrain.js -o jd_super_redrain.js
-          node jd_super_redrain.js        
+          curl https://github.com/ys6666/Kieeeee/blob/main/scripts/jd_super_live_redrain.js -o jd_super_live_redrain.js
+          node jd_super_live_redrain.js       
       
          
           
