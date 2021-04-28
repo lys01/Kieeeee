@@ -1,4 +1,4 @@
-name: 摇京豆(超级摇一摇)
+name: 摇京豆(超级摇一摇 京东小魔方)
 
 on:
     workflow_dispatch:
