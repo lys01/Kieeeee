@@ -3,7 +3,7 @@ name: ME_超级直播间红包雨(整点红包雨)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "57 * * * *"
+        - cron: "56 * * * *"
     watch:
         types: [started]
     repository_dispatch:
