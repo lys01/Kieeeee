@@ -6,7 +6,7 @@ name: 京东十元街（赚京豆tubie）
 on:
   workflow_dispatch:
   schedule:
-    - cron: '38 16,22 * * *'
+    - cron: '35,55 8,15,16,23 * * *'
   watch:
     types: started
   repository_dispatch:
