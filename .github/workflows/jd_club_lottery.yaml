@@ -3,7 +3,7 @@ name: 摇京豆(超级摇一摇 京东小魔方)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "20 2,11,16 * * *"
+        - cron: "55 1,7,15,16 * * *"
     watch:
         types: [started]
     repository_dispatch:
