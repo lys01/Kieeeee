@@ -14,6 +14,7 @@ hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
 jddj  :  https://github.com/passerby-b/JDDJ
 
+龙王 :  https://github.com/nianyuguai/longzhuzhu
+
 Choicc  :   https://github.com/Choicc/MyActions
 
-龙王 :  https://github.com/nianyuguai/longzhuzhu
