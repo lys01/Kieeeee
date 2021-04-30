@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: joy_steal
+    types: jd_joy_steal
 jobs:
   build:
 
@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/Joinchief/Low_key.git ~/Low_key
+          git clone https://github.com/seamly888/Alie.git ~/Alie
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,11 +33,11 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/Low_key
+          cd ~/Alie
           npm install
       - name: '运行 【宠汪汪偷好友狗粮与积分】'
         run: |
-          cd ~/Low_key
+          cd ~/Alie
           node jd_joy_steal.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
