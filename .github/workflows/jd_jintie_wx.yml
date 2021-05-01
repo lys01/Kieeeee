@@ -1,4 +1,4 @@
-name: 领金贴
+name: 领金贴_微信小程序
 
 on:
     workflow_dispatch:
