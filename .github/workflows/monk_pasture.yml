@@ -10,7 +10,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_monk_pasture
+        types: monk_pasture
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -46,7 +46,7 @@ jobs:
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
                   MONEY_TREE_SELL_FRUIT: ${{ github.event.clienz_wish.jst_payload.MONEY_TREE_SELL_FRUIT || secrets.MONEY_TREE_SELL_FRUIT }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/jd_monk_pasture.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/monk_pasture.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
                   PASTURE_EXCHANGE_KEYWORD: ${{ github.event.client_payload.PASTURE_EXCHANGE_KEYWORD || secrets.PASTURE_EXCHANGE_KEYWORD }}
