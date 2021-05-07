@@ -12,7 +12,7 @@ youyoustar : https://github.com/Joinchief/Low_key.git
 
 hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
-dust :  https://github.com/monk-coder/dust
+monk :  https://github.com/monk-coder/dust
 
 jddj  :  https://github.com/passerby-b/JDDJ
 
