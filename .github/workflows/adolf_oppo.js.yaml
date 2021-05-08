@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: dust-Ichen百变大咖秀(至2021年4月22日)
+name: dust-刺客567之寻宝oppo(5月12号)
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "10 1,2 * * *"
+        - cron: "10 0,4 * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_entertainment
+        types: adolf_oppo.js
 
 jobs:
     build:
@@ -25,7 +25,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行 【百变大咖秀】"
+            - name: "运行 【app】"
               run: |
                   node onlyOneExecute.js
               env:
@@ -47,6 +47,6 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/z_entertainment.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/adolf_oppo.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
