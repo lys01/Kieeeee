@@ -6,7 +6,7 @@ name: 京东宠汪汪邀请助力
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 4,22 * * *"
+        - cron: "1 2,22 * * *"
     watch:
         types: [started]
     repository_dispatch:
