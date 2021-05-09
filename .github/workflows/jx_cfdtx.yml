@@ -6,11 +6,9 @@ name: 京喜财富岛提现
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 15 * * *'
-  watch:
-    types: started
+    - cron: '40 15,4 * * *'
   repository_dispatch:
-    types: jx_cfdtx
+    types: cfd
 jobs:
   build:
 
@@ -18,8 +16,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/tubie75/jdqd.git ~/jdqd
+        uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,21 +30,34 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/jdqd
           npm install
-      - name: '运行 【财富岛提现】'
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: '定时签到'
         run: |
-          cd ~/jdqd
+            python3 wait.py 23:59:59.990
+      - name: 'jxcfdtx'
+        run: |
+          sleep 1
+          node jx_cfdtx.js
+          sleep 3
+          node jx_cfdtx.js
+          sleep 3
           node jx_cfdtx.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_CFD }}
+          #JD_USER_AGENT: ${{ secrets.JD_USER_AGENT_CFD }}
+          #JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          QYWX_AM: ${{ secrets.QYWX_AM }}
-          PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
+          QQ_SKEY: ${{ secrets.QQ_SKEY }}
+          QQ_MODE: ${{ secrets.QQ_MODE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
