@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_joy500
+    types: jd_joy_reward
 jobs:
   build:
 
@@ -45,8 +45,8 @@ jobs:
               python3 wait24.py 0.1 0.1 29
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_joy500.js -o jd_joy500.js
-          node jd_joy500.js        
+          curl https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_joy_reward.js -o jd_joy_reward.js
+          node jd_joy_reward.js       
       
          
           
