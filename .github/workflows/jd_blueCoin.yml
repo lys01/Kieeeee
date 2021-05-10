@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Me_京喜财富岛提现(hajiu无延迟版)
+name: Me_京小超领蓝币兑换1000(hajiu无延迟版)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '39 15,3 * * *'
+    - cron: '40 15 * * *'
   watch:
     types: started
   repository_dispatch:
-    types: jx_cfdtx
+    types: jd_blueCoin
 jobs:
   build:
 
@@ -45,8 +45,8 @@ jobs:
               python3 wait.py 23:59:59.990
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/tubie75/jdqd/main/jx_cfdtx.js -o jx_cfdtx.js
-          node jx_cfdtx.js      
+          curl https://raw.githubusercontent.com/tubie75/jdqd/main/jd_blueCoin.js -o jd_blueCoin.js
+          node jd_blueCoin.js    
       
          
           
@@ -64,4 +64,4 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          JD_JOY_REWARD_NAME: ${{ secrets.JD_JOY_REWARD_NAME_ME }}
+          MARKET_COIN_TO_BEANS: ${{ secrets.MARKET_COIN_TO_BEANS_ME }}
