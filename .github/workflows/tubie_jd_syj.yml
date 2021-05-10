@@ -1,16 +1,17 @@
+
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 京东十元街（赚京豆tubie）
+name: jd_Newsyj
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 8,16  * * *'
+    - cron: '1 23,12 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
-    types: jd_syj
+    types: jd_Newsyj
 jobs:
   build:
 
@@ -19,7 +20,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/tubie75/jdqd.git ~/jdqd
+          git clone https://github.com/Joinchief/Low_key.git ~/Low_key
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,12 +34,12 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/jdqd
+          cd ~/Low_key
           npm install
-      - name: '运行 【赚京豆】'
+      - name: '运行 【赚京豆New】'
         run: |
-          cd ~/jdqd
-          node jd_syj.js
+          cd ~/Low_key
+          node jd_Newsyj.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -51,3 +52,4 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
