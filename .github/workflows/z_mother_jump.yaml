@@ -3,7 +3,7 @@ name: dust-Ichen母婴跳一跳（截止4月28日）
 on:
     workflow_dispatch:
     schedule:
-        - cron: "7 0,6,12 * * *"
+        - cron: "7 23,6,12 * * *"
     watch:
         types: [started]
     repository_dispatch:
