@@ -3,7 +3,7 @@ name: 京喜财富岛（tubie）
 on:
   workflow_dispatch:
   schedule:
-    - cron: '21 16,23,4,10,15 * * *'
+    - cron: '14 16,23,4,10,15 * * *'
   watch:
     types: started
   repository_dispatch:
