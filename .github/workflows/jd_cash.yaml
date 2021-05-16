@@ -6,7 +6,7 @@ name: 签到领现金(YouYoustar)
 on:
     workflow_dispatch:
     schedule:
-        - cron: 45 0,4,15,17 * * *"
+        - cron: "45 0,4,15,17 * * *"
     watch:
         types: [started]
     repository_dispatch:
