@@ -204,21 +204,21 @@ async function downloader_jd() {
         await download("https://github.com/wuzhi03/MyActions/raw/main/jdCookie.js", "./jdCookie.js", "京东Cookies");
     if (remoteContent.indexOf("jdFruitShareCodes") > 0) {
         await download(
-            "https://github.com/wuzhi03/MyActions/raw/main/jdFruitShareCodes.js",
+            "https://github.com/ys6666/Kieeeee/raw/main/jdFruitShareCodes.js",
             "./jdFruitShareCodes.js",
             "东东农场互助码"
         );
     }
     if (remoteContent.indexOf("jdPetShareCodes") > 0) {
         await download(
-            "https://github.com/wuzhi03/MyActions/raw/main/jdPetShareCodes.js",
+            "https://github.com/ys6666/Kieeeee/raw/main/jdPetShareCodes.js",
             "./jdPetShareCodes.js",
             "京东萌宠"
         );
     }
     if (remoteContent.indexOf("jdPlantBeanShareCodes") > 0) {
         await download(
-            "https://github.com/wuzhi03/MyActions/raw/main/jdPlantBeanShareCodes.js",
+            "https://github.com/ys6666/Kieeeee/raw/main/jdPlantBeanShareCodes.js",
             "./jdPlantBeanShareCodes.js",
             "种豆得豆互助码"
         );
@@ -231,14 +231,14 @@ async function downloader_jd() {
         );
     if (remoteContent.indexOf("jdFactoryShareCodes") > 0) {
         await download(
-            "https://github.com/wuzhi03/MyActions/raw/main/jdFactoryShareCodes.js",
+            "https://github.com/ys6666/Kieeeee/raw/main/jdFactoryShareCodes.js",
             "./jdFactoryShareCodes.js",
             "东东工厂互助码"
         );
     }
     if (remoteContent.indexOf("jdDreamFactoryShareCodes") > 0) {
         await download(
-            "https://github.com/wuzhi03/MyActions/raw/main/jdDreamFactoryShareCodes.js",
+            "https://github.com/ys6666/Kieeeee/raw/main/jdDreamFactoryShareCodes.js",
             "./jdDreamFactoryShareCodes.js",
             "京喜工厂互助码"
         );
