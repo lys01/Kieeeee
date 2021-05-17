@@ -3,7 +3,7 @@ name: ME_半点红包雨
 on:
   workflow_dispatch:
   schedule:
-    - cron: '19 8-15 * * *'
+    - cron: '18 8-15 * * *'
   watch:
     types: started
   repository_dispatch:
