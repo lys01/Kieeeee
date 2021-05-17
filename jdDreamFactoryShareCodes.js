@@ -8,10 +8,22 @@
 // 同一个京东账号的好友互助码用@符号隔开,不同京东账号之间用&符号或者换行隔开,下面给一个示例
 // 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
 let shareCodes = [
-  '3YcJMrfh8OClRVhq5TowKA==@kiPudUhBb7pIikDNHQC1lw==@yTm0YyioEekFq34kSK0X6w==@B7wQcNgYSwLNQd3goiAu6g==@exVjdAlWg7W-UBq_rovWmA==@F8sj4kbVbt72fsgq3yAY9Q==@V9dZyRpXEraMKNvs-D8aVNxV93T0LsSlZfhrVVtpFLU=',//账号一的好友shareCode,不同好友中间用@符号隔开
-  '3YcJMrfh8OClRVhq5TowKA==@kiPudUhBb7pIikDNHQC1lw==@yTm0YyioEekFq34kSK0X6w==@B7wQcNgYSwLNQd3goiAu6g==@exVjdAlWg7W-UBq_rovWmA==@F8sj4kbVbt72fsgq3yAY9Q==@V9dZyRpXEraMKNvs-D8aVNxV93T0LsSlZfhrVVtpFLU=',//账号二的好友shareCode，不同好友中间用@符号隔开
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
+   'av7Z9yesNHYg0VtCXZgtKg==@fUk2ajN3A909XsSENwdsEA==@7gbRG0JXphN0lv2x2RN5nA==@UV950D3J18UtHw23j4PCew==@UtYRGCiT5YHHK0-FHOHpmA==@YXhsWBUte2iLK26fkDsFmw==@d0e5e4c4fea811d404789f24a81e9dfe',
 ]
-// 判断github action里面是否有京喜工厂互助码
+// 判断github action里面是否有东东萌宠互助码
 if (process.env.DREAM_FACTORY_SHARE_CODES) {
   if (process.env.DREAM_FACTORY_SHARE_CODES.indexOf('&') > -1) {
     console.log(`您的互助码选择的是用&隔开\n`)
