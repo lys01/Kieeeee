@@ -41,8 +41,8 @@ jobs:
           python-version: 3.7
       - name: 'app'
         run: |
-              curl https://raw.githubusercontent.com/tubie75/jdqd/main/wait.py -o wait.py
-              python3 wait.py 0.1 0.1 29
+              curl https://raw.githubusercontent.com/tubie75/jdqd/main/wait_hour.py -o wait_hour.py
+              python3 wait_hour.py 1-24
       - name: '运行'
         run: |
           curl https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_joy_reward.js -o jd_joy_reward.js
