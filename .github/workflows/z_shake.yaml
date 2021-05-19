@@ -6,7 +6,7 @@ name: dust-Ichen摇一摇
 on:
     workflow_dispatch:
     schedule:
-        - cron: "30 23 * * *"
+        - cron: "30 22 * * *"
     watch:
         types: [started]
     repository_dispatch:
