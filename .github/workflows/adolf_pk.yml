@@ -6,7 +6,7 @@ name: dust-adolf_pk京享值PK(截至5月31号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "12 5,10,17,23 17-31 5 *"
+        - cron: "12 1,5,10,17,23 17-31 5 *"
     watch:
         types: [started]
     repository_dispatch:
