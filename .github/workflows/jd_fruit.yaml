@@ -6,7 +6,7 @@ name: 东东农场(YouYoustar)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "26 1,4,9,14,23 * * *"
+        - cron: "13 1,4,9,14,23 * * *"
     watch:
         types: [started]
     repository_dispatch:
