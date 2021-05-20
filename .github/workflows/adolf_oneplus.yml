@@ -6,7 +6,7 @@ name: dust-m赢一加新品手机(截止6月20号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "20 16 * 5,6 *"
+        - cron: "20 16,19 * 5,6 *"
     watch:
         types: [started]
     repository_dispatch:
@@ -72,6 +72,6 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/main/adolf_oneplus.js
+                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/dust/adolf_oneplus.js
                   REPOURL: https://raw.githubusercontent.com/seamly888/Alie/JD-Shylocks/
                   ADOLF_ADDSKU: ${{ github.event.client_payload.true || secrets.true }}
