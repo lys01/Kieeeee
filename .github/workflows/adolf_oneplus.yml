@@ -6,7 +6,7 @@ name: dust-m赢一加新品手机(截止6月20号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "58 15 * 5,6 *"
+        - cron: "20 16 * 5,6 *"
     watch:
         types: [started]
     repository_dispatch:
