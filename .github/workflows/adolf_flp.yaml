@@ -6,7 +6,7 @@ name: dust-m飞利浦电视成长记(6月18号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "5 16 * 5,6 *"
+        - cron: "15 16 * 5,6 *"
     watch:
         types: [started]
     repository_dispatch:
