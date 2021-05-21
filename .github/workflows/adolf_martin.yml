@@ -6,7 +6,7 @@ name: dust-n人头马x博朗(截至5月31号)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "20 17 20-31 5 * "
+        - cron: "9 16,18 20-31 5 * "
     watch:
         types: [started]
     repository_dispatch:
