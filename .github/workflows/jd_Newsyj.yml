@@ -2,7 +2,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 京东十元街New(YouYoustar)
+name: 京东十元街(YouYoustar)
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ on:
   watch:
     types: [started]
   repository_dispatch:
-    types: jd_Newsyj
+    types: jd_syj
 jobs:
   build:
 
@@ -36,10 +36,10 @@ jobs:
         run: |
           cd ~/Low_key
           npm install
-      - name: '运行 【赚京豆New】'
+      - name: '运行 【赚京豆】'
         run: |
           cd ~/Low_key
-          node jd_Newsyj.js
+          node jd_syj.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
