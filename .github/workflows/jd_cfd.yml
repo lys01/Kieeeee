@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/tubie75/jdqd.git ~/jdqd
+          git clone https://github.com/Joinchief/Low_key.git ~/Low_key
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -34,7 +34,7 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
-          cd ~/jdqd
+          cd ~/Low_key
           node jd_cfd.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
