@@ -1,4 +1,4 @@
-name: A1城城分现金
+name: A城城分现金(dust)
 
 on:
     workflow_dispatch:
