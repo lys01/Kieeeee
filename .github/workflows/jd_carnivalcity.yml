@@ -45,8 +45,8 @@ jobs:
               python3 wait_hour.py 1-24
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/tubie75/jdqd/main/z_carnivalcity.js -o z_carnivalcity.js
-          node z_carnivalcity.js
+          curl https://raw.githubusercontent.com/Joinchief/Low_key/main/jd_carnivalcity.js -o jd_carnivalcity.js
+          node jd_carnivalcity.js
       
       
         env:
