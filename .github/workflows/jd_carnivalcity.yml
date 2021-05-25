@@ -6,7 +6,7 @@ name: ME_手机狂欢城(hajiu无延迟版)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 15,21,3,9 * * *'
+    - cron: '37 15,21,3,9 * * *'
   watch:
     types: started
   repository_dispatch:
