@@ -1,9 +1,9 @@
-name: 京东618_动物联萌
+name: 618_动物联萌
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "6 */2 * * *"
+        - cron: "6 1-22/2 * * *"
     watch:
         types: [started]
     repository_dispatch:
