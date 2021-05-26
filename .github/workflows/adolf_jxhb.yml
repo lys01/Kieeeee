@@ -6,7 +6,7 @@ name: dust-n京喜阶梯红包
 on:
     workflow_dispatch:
     schedule:
-        - cron: "35 21 * 5,6 *"
+        - cron: "5 17,22 * 5,6 *"
     watch:
         types: [started]
     repository_dispatch:
