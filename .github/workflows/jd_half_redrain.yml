@@ -6,7 +6,7 @@ name: ME_半点红包雨(hajiu无延迟版)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 */1 * * *'
+    - cron: '10 */1 * * *'
   watch:
     types: started
   repository_dispatch:
