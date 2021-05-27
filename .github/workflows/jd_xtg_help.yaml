@@ -7,7 +7,7 @@ name: Me家电星推官好友互助
 on:
     workflow_dispatch:
     schedule:
-        - cron: "52 15 * * *"
+        - cron: "52 15,21 * * *"
     watch:
         types: [started]
     repository_dispatch:
