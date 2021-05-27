@@ -14,7 +14,7 @@ hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
 monk :  https://github.com/monk-coder/dust
 
-jddj  :  https://github.com/wulove/my_scripts/tree/jddj
+my_scripts :  https://github.com/wulove/my_scripts/tree/master
 
 龙王 :  https://github.com/nianyuguai/longzhuzhu
 
