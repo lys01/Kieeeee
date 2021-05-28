@@ -6,7 +6,7 @@ name: Hajiuhajiu店铺签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 18,10 * * *'
+    - cron: '40 17,11 * * *'
   repository_dispatch:
     types: 店铺签到
 jobs:
