@@ -27,7 +27,7 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
-          curl https://github.com/yangtingxiao/QuantumultX/raw/master/scripts/jd/jd_rankingList.js -o jd_rankingList.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/dust/jd_rankingList.js -o jd_rankingList.js
           node jd_rankingList.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
