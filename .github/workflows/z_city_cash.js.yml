@@ -3,7 +3,7 @@ name: A城城分现金(dust)
 on:
     workflow_dispatch:
     schedule:
-        - cron: "4 0-23/3 * * *"
+        - cron: "38 16,17,3 * * *"
     watch:
         types: [started]
     repository_dispatch:
