@@ -8,8 +8,6 @@ shuye73   :  https://github.com/wuzhi03/MyActions
 
 tubie :   https://github.com/tubie75/jdqd
 
-youyoustar : https://github.com/Joinchief/Low_key.git
-
 hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
 monk :  https://github.com/monk-coder/dust
