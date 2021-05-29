@@ -6,7 +6,7 @@ name: A城城分现金(截至6月3号)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '57 */2 * * *'
+    - cron: '57 */3 * * *'
   watch:
     types: [started]
   repository_dispatch:
