@@ -10,8 +10,6 @@ tubie :   https://github.com/tubie75/jdqd
 
 hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
-monk :  https://github.com/monk-coder/dust
-
 my_scripts :  https://github.com/wulove/my_scripts/tree/master
 
 龙王 :  https://github.com/nianyuguai/longzhuzhu
