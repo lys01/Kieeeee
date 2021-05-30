@@ -8,6 +8,8 @@ shuye73   :  https://github.com/wuzhi03/MyActions
 
 tubie :   https://github.com/tubie75/jdqd
 
+dantes :  https://github.com/dantes1016/gaqd
+
 hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
 my_scripts :  https://github.com/wulove/my_scripts/tree/master
