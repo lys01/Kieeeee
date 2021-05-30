@@ -1,13 +1,13 @@
-name: Kiee_美丽研究院
+name: Kiee_京小兑
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '37 17,14 * * *'
+    - cron: '0 0,8,12 * * *'
   watch:
     types: started
   repository_dispatch:
-    types: jd_beauty.js
+    types: jd_jxd.js
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
-          node jd_beauty.js
+          node jd_jxd.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
