@@ -6,7 +6,7 @@ name: 沸腾之夜
 on:
     workflow_dispatch:
     schedule:
-        - cron: "25 0-23/1 * * * "
+        - cron: "45 6-10/1 * * * "
     watch:
         types: [started]
     repository_dispatch:
