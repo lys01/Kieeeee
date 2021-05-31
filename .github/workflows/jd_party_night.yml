@@ -6,7 +6,7 @@ name: 沸腾之夜
 on:
     workflow_dispatch:
     schedule:
-        - cron: "45 6-10/1 * * * "
+        - cron: "45 0-23/1 * * * "
     watch:
         types: [started]
     repository_dispatch:
@@ -47,6 +47,6 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  SYNCURL: https://raw.githubusercontent.com/seamly888/Alie/master/jd_party_night.js
+                  SYNCURL: https://raw.githubusercontent.com/tubie75/jdqd/main/jd_party_night.js
                   ADOLF_ADDSKU: ${{ github.event.client_payload.ADOLF_ADDSKU|| secrets.ADOLF_ADDSKU }}
                   ADOLF_MARTIN: ${{ github.event.client_payload.ADOLF_MARTIN || secrets.ADOLF_MARTIN }}
