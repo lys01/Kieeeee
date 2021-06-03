@@ -45,7 +45,7 @@ jobs:
               python3 wait_hour.py 1-24
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/hajiuhajiu/jdsign1112/master/jd_joy_reward.js -o jd_joy_reward.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/hajiu/jd_joy_reward.js -o jd_joy_reward.js
           node jd_joy_reward.js       
       
          
