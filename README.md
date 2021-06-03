@@ -15,7 +15,5 @@ hanjiuhajiun  : https://github.com/hajiuhajiu/jdsign1112
 
 my_scripts :  https://github.com/wulove/my_scripts/tree/master
 
-龙王 :  https://github.com/nianyuguai/longzhuzhu
-
 Choicc  :   https://github.com/Choicc/MyActions
 
