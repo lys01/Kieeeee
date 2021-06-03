@@ -11,7 +11,7 @@ tubie :   https://github.com/tubie75/jdqd
 
 dantes :  https://github.com/dantes1016/gaqd
 
-my_scripts :  https://github.com/wulove/my_scripts/tree/master
+wulove :  https://github.com/wulove/my_scripts/tree/master
 
 Choicc  :   https://github.com/Choicc/MyActions
 
