@@ -6,9 +6,9 @@ name: Hajiuhajiu店铺签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 17,11 * * *'
+    - cron: '2 16,11 * * *'
   repository_dispatch:
-    types: 店铺签到
+    types: 渠道-店铺签到
 jobs:
   build:
 
@@ -26,10 +26,10 @@ jobs:
           npm install
      - name: '运行 【店铺签到】'
        run: |
-          curl https://raw.githubusercontent.com/seamly888/Alie/hajiu/jd_dpqd.js -o jd_dpqd.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/dust/monk_inter_shop_sign.js -o monk_inter_shop_sign.js
+          node monk_inter_shop_sign.js
+          curl https://raw.githubusercontent.com/wulove/my_scripts/master/jd_dpqd.js -o jd_dpqd.js
           node jd_dpqd.js
-          curl https://raw.githubusercontent.com/seamly888/Alie/hajiu/jd_ShopSign.js -o jd_ShopSign.js
-          node jd_ShopSign.js
           curl https://raw.githubusercontent.com/seamly888/Alie/hajiu/jd_dpqd2.js -o jd_dpqd2.js
           node jd_dpqd2.js
           
