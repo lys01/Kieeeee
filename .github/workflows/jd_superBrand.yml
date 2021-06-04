@@ -6,7 +6,7 @@ name: Weoux特物ZX联想
 on:
     workflow_dispatch:
     schedule:
-        - cron: "6 3 * * * "
+        - cron: "16 3 * * * "
     watch:
         types: [started]
     repository_dispatch:
