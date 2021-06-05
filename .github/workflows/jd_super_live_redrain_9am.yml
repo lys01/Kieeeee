@@ -7,16 +7,17 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_super_redrain
+    types: jd_super_redrain.js
 jobs:
   build:
-
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/tubie75/jdqd.git ~/jdqd
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ secrets.REPO }}
+          ref: ${{ secrets.REF }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -30,11 +31,9 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/jdqd
           npm install
       - name: '运行 【app】'
         run: |
-          cd ~/jdqd
           node jd_super_redrain.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
