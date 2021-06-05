@@ -6,7 +6,7 @@ name: Weoux特物ZX联想
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2 16,11 * * *'
+    - cron: '2 16,17,11 * * *'
   repository_dispatch:
     types: jd_superBrand.js
 jobs:
