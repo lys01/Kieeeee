@@ -1,7 +1,7 @@
 # Kieeee
 
 
-项目已作废,仅为备份
+项目已作废,仅为备份d_dust,s_shuye,a_Alie,K_kie
 
 lxk0309 ：  https://github.com/chinnkarahoi/jd_scripts
 
