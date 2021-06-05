@@ -5,7 +5,7 @@
 
 lxk0309 ：  https://github.com/chinnkarahoi/jd_scripts
 
-YouYoustar :   https://github.com/joinchiefo/dog
+jo :   https://github.com/joinchiefo/dog
 
 shuye73  :  https://github.com/wuzhi03/MyActions
 
