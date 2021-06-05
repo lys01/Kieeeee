@@ -20,7 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: tubie75/jdqd
+          repository: ${{ secrets.REPO }}
+          ref: ${{ secrets.REF }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -41,11 +42,11 @@ jobs:
           python-version: 3.7
       - name: 'app'
         run: |
-              curl https://raw.githubusercontent.com/tubie75/jdqd/main/accwait.py -o accwait.py
+              curl https://raw.githubusercontent.com/seamly888/Alie/dust/accwait.py -o accwait.py
               python3 accwait.py 0.1 0.1 29
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/tubie75/jdqd/main/jd_half_redrain.js-o jd_half_redrain.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/dust/jd_half_redrain.js-o jd_half_redrain.js
           node jd_half_redrain.js   
       
       

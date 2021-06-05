@@ -20,7 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: seamly888/Ally
+          repository: ${{ secrets.REPO }}
+          ref: ${{ secrets.REF }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -41,11 +42,11 @@ jobs:
           python-version: 3.7
       - name: 'app'
         run: |
-              curl https://raw.githubusercontent.com/tubie75/jdqd/main/wait_hour.py -o wait_hour.py
+              curl https://raw.githubusercontent.com/seamly888/Alie/dust/wait_hour.py -o wait_hour.py
               python3 wait_hour.py 1-24
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/seamly888/Alie/hajiu/jd_joy_reward.js -o jd_joy_reward.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/dust/jd_joy_reward.js -o jd_joy_reward.js
           node jd_joy_reward.js       
       
          
