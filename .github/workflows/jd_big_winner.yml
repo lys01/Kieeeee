@@ -6,7 +6,7 @@ name: Kiee_省钱大赢家之翻翻乐(截至6月30号)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/40 * * * *'
+    - cron: '*/59 * * * *'
   repository_dispatch:
     types: jd_big_winner
 jobs:
@@ -28,8 +28,8 @@ jobs:
        run: |
           curl https://raw.githubusercontent.com/seamly888/Alie/jo/jd_big_winner.js -o jd_big_winner.js
           node jd_big_winner.js
-          #curl https://raw.githubusercontent.com/seamly888/Alie/main/jd_618redpacket.js -o jd_618redpacket.js
-          #node jd_618redpacket.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/main/jd_618redpacket.js -o jd_618redpacket.js
+          node jd_618redpacket.js
           
           
        env:
