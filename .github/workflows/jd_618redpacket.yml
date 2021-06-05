@@ -28,8 +28,8 @@ jobs:
        run: |
           curl https://raw.githubusercontent.com/seamly888/Alie/main/jd_618redpacket.js -o jd_618redpacket.js
           node jd_618redpacket.js
-          curl https://raw.githubusercontent.com/seamly888/Alie/main/jd_618ffl.js -o jd_618ffl.js
-          node jd_618ffl.js
+         #curl https://raw.githubusercontent.com/seamly888/Alie/main/jd_618ffl.js -o jd_618ffl.js
+         #node jd_618ffl.js
           
           
        env:
