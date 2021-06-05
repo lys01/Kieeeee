@@ -34,7 +34,7 @@ jobs:
         if: env.dst_key
         with:
           src: github/ys6666
-          dst: gitee/kaiym
+          dst: gitee/seamly888
           static_list: "Kieeeee"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
