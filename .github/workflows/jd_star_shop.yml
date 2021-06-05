@@ -6,7 +6,7 @@ name: 618明星小店-星店长
 on:
     workflow_dispatch:
     schedule:
-        - cron: "53 15,22,12 * * * "
+        - cron: "53 15,22,11 * * * "
     watch:
         types: [started]
     repository_dispatch:
