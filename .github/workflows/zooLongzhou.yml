@@ -21,7 +21,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: ${{ secrets.REPO }}
-          ref: dust
+          ref: ${{ secrets.REF }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
