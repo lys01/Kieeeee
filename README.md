@@ -7,11 +7,13 @@ lxk0309 ：  https://github.com/chinnkarahoi/jd_scripts
 
 jo :   https://github.com/joinchiefo/dog
 
+tubie75 : https://github.com/tubie75/scripts
+
+dantes :  https://github.com/dantes1016/autorepo
+
 shuye73  :  https://github.com/wuzhi03/MyActions
 
 inoyna :   https://github.com/inoyna11/jd28
-
-dantes :  https://github.com/dantes1016/autorepo
 
 wulove :  https://github.com/wulove/my_scripts/tree/master
 
