@@ -9,9 +9,7 @@ shuye73  :  https://github.com/wuzhi03/MyActions
 
 inoyna :   https://github.com/inoyna11/jd28
 
-dantes : 1. https://github.com/dantes1016/autorepo
-     
-         2. https://github.com/dantes1016/gaqd
+dantes :  https://github.com/dantes1016/autorepo
 
 wulove :  https://github.com/wulove/my_scripts/tree/master
 
