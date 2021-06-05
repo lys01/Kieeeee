@@ -5,6 +5,8 @@
 
 lxk0309 ：  https://github.com/chinnkarahoi/jd_scripts
 
+lxk :   https://github.com/joinchiefo/dog
+
 shuye73  :  https://github.com/wuzhi03/MyActions
 
 inoyna :   https://github.com/inoyna11/jd28
