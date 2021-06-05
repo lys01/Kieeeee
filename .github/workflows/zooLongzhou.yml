@@ -19,9 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          #token: ${{ secrets.PAT }}
+          token: ${{ secrets.PAT }}
           repository: ${{ secrets.REPO }}
-          ref: main
+          ref: dust
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
