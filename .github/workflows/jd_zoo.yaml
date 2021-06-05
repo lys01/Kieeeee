@@ -1,4 +1,4 @@
-name: 618_动物联萌(截至6月20号)
+name: 618_动物联萌d(截至6月20号)
 
 on:
   workflow_dispatch:

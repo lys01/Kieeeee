@@ -1,4 +1,4 @@
-name: 618-动物园金币收集
+name: 618-动物园金币收集d
 
 on:
   workflow_dispatch:
