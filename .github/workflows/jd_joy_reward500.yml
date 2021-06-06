@@ -6,7 +6,7 @@ name: Me_宠汪汪换20豆d(hyzaw无延迟版)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '27 15,3,7 * * *'
+    - cron: '24 15,3,7 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -65,5 +65,5 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          JD_JOY_REWARD_NAME: ${{ secrets.JD_JOY_REWARD_NAME }}
-          
+          #JD_JOY_REWARD_NAME: ${{ secrets.JD_JOY_REWARD_NAME }}
+          JD_JOY_REWARD_NAME: 500
