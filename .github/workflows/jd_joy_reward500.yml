@@ -36,14 +36,14 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7
-      - name: 'app'
-        run: |
-              curl https://raw.githubusercontent.com/seamly888/Alie/dust/wait_hour.py -o wait_hour.py
-              python3 wait_hour.py 1-24
+      #- name: Set up Python 3.7
+      #  uses: actions/setup-python@v2
+       # with:
+        #  python-version: 3.7
+      #- name: 'app'
+       # run: |
+        #      curl https://raw.githubusercontent.com/seamly888/Alie/dust/wait_hour.py -o wait_hour.py
+         #     python3 wait_hour.py 1-24
       - name: '运行'
         run: |
           curl https://raw.githubusercontent.com/seamly888/Alie/main/ddo_joy_reward.js -o ddo_joy_reward.js
