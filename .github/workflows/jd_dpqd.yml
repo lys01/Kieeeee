@@ -6,7 +6,7 @@ name: Kiee渠道-店铺签到inoyna11
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2 16,11 * * *'
+    - cron: '2 16 * * *'
   repository_dispatch:
     types: jd_dpqd
 jobs:
