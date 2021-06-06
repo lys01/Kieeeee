@@ -9,7 +9,7 @@ jo :   https://github.com/joinchiefo/dog
 
 tubie75 : https://github.com/tubie75/scripts
 
-dantes :  https://github.com/dantes1016/autorepo
+dantes :  https://github.com/dantes1016/gaqd
 
 shuye73  :  https://github.com/wuzhi03/MyActions
 
