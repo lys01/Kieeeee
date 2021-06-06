@@ -32,8 +32,8 @@ jobs:
           node jd_gcip.js
           curl https://raw.githubusercontent.com/inoyna11/jd28/master/jd_ppdz.js -o jd_ppdz.js
           node jd_ppdz.js
-          curl https://raw.githubusercontent.com/inoyna11/jd28/master/jd_ry618.js -o jd_ry618.js
-          node jd_ry618.js
+          #curl https://raw.githubusercontent.com/inoyna11/jd28/master/jd_ry618.js -o jd_ry618.js
+          #node jd_ry618.js
           
           
        env:
