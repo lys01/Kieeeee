@@ -6,7 +6,7 @@ name: hyzaw京享值PK(截至6月31号)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '12 1,5,10,17,23 * 6 *'
+    - cron: '42 13 * * *'
   watch:
     types: started
   repository_dispatch:
