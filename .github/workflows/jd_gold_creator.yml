@@ -35,6 +35,7 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
+          curl https://raw.githubusercontent.com/seamly888/Alie/jo/jd_gold_creator.js -o jd_gold_creator.js
           node jd_gold_creator.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
