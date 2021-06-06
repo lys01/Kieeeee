@@ -1,4 +1,4 @@
-name: Kiee2_京喜领88元红包d
+name: 京喜领88元红包Kiee
 
 on:
   workflow_dispatch:
@@ -34,6 +34,7 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
+          curl https://raw.githubusercontent.com/seamly888/Alie/jo/jd_jxlhb.js -o jd_jxlhb.js
           node jd_jxlhb.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
