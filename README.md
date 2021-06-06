@@ -21,12 +21,12 @@ Weoux :   https://github.com/Wenmoux/scripts
 
 zoo动物园 :   https://github.com/zooPanda/zoo
 
-Choicc  :   https://github.com/Choicc/MyActions
-
 hyzaw  :  https://github.com/hyzaw/scripts.git
 
 panghu :  https://github.com/panghu999/panghu.git
 
 Ariszy :  https://github.com/Ariszy/Private-Script.git
+
+Choicc  :   https://github.com/Choicc/MyActions
 
 hundun :  https://github.com/whyour/hundun.git
