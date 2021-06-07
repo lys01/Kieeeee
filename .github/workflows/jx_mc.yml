@@ -6,7 +6,7 @@ name: MoPo京喜牧场
 on:
     workflow_dispatch:
     schedule:
-        - cron: "1 17,23,11 * * *"
+        - cron: "1 */2 * * *"
     watch:
         types: [started]
     repository_dispatch:
@@ -72,6 +72,7 @@ jobs:
                   QYWX_AM: ${{ github.event.client_payload.QYWX_AM || secrets.QYWX_AM }}
                   PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
-                  SYNCURL: http://mopo-cloud.ddnsfree.com/GitHub/me/jx_mc.js
+                  #SYNCURL: http://mopo-cloud.ddnsfree.com/GitHub/me/jx_mc.js
+                  SYNCURL: https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_mc.js
                   REPOURL: ${{ github.event.client_payload.REPOURL || secrets.REPOURL }}
                   BANSTR: ${{ github.event.client_payload.BANSTR || secrets.BANSTR }}
