@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_super_redrain
+    types: long_half_redrain.js
 jobs:
   build:
 
@@ -46,8 +46,8 @@ jobs:
               python3 accwait.py 0.1 0.1 29
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/seamly888/Alie/dust/jd_half_redrain.js-o jd_half_redrain.js
-          node jd_half_redrain.js   
+          curl https://raw.githubusercontent.com/seamly888/Alie/main/long_half_redrain.js-o long_half_redrain.js
+          node long_half_redrain.js 
       
       
         env:
