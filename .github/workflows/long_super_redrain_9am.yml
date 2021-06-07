@@ -1,4 +1,4 @@
-name: ME_超级直播间红包雨d(9点红包雨)
+name: ME_超级直播间红包雨(整点红包雨)
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_super_redrain.js
+    types: long_super_redrain.js
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +34,8 @@ jobs:
           npm install
       - name: '运行 【app】'
         run: |
-          node jd_super_redrain.js
+          curl https://raw.githubusercontent.com/seamly888/Alie/main/long_super_redrain.js -o long_super_redrain.js
+          node long_super_redrain.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
